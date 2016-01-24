@@ -1,3 +1,11 @@
+# mugencalc : むげんにけいさいもんだいをだすまっしーん
+
+[![Circle CI](https://circleci.com/gh/yoshiaki310/mugencalc.svg?style=svg)](https://circleci.com/gh/yoshiaki310/mugencalc)
+
+
+以下元ネタの angular-seed の readme
+
+
 # angular-seed — the seed for AngularJS apps
 
 This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
