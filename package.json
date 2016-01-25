@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "description": "むげんにけいさいもんだいをだすまっしーん",
-  "repository": "https://github.com/yoshiaki310/mugencalcS",
+  "repository": "https://github.com/yoshiaki310/mugencalc",
   "license": "MIT",
   "devDependencies": {
     "bower": "^1.3.1",
