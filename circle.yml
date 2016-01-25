@@ -8,11 +8,11 @@ dependencies:
     - bundle install
     - sudo pip install awscli
 
-    cache_directories:
-      - "node_modules"
+  cache_directories:
+    - "node_modules"
 
 deployment:
- aws:
+  aws:
   branch: master
   commands:
     - ./deploy_staging.sh
