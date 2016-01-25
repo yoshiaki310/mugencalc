@@ -14,5 +14,5 @@ dependencies:
 deployment:
   production:
     branch: master
-      commands:
-        - ./deploy_staging.sh
+    commands:
+      - ./deploy_staging.sh
