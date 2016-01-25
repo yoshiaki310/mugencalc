@@ -12,7 +12,7 @@ dependencies:
     - "node_modules"
 
 deployment:
-  aws:
-  branch: master
-  commands:
-    - ./deploy_staging.sh
+  production:
+    branch: master
+      commands:
+        - ./deploy_staging.sh
