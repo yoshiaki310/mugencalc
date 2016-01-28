@@ -49,9 +49,9 @@ angular.module('mugenCalc.view', ['ngRoute'])
         var questionNum = 10
 
         this.questionList = []
-        for(var i=0 ; i<questionNum; i++){
+        for(var i=0 ; i<questionNum ; i++ ){
             var numOfElements = Math.random() * 4 + 1
-            var nums = new Array
+            var nums = new Array([])
             var question = '' , answer = 0
             switch (mode){
                 case 1:
