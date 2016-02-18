@@ -13,7 +13,8 @@ angular.module('mugenCalc.view', ['ngRoute'])
 
   $scope.selectMode = [
     { label:'たしざんのみ', mode: 1},
-    { label:'ひきざんもふくめる', mode: 2 }
+    { label:'ひきざんもふくめる', mode: 2 },
+    { label:'かけざん', mode: 3 }
   ]
   $scope.selectDigit = [
     { label:'1けた(1～9)', digit: 1},
@@ -80,6 +81,15 @@ angular.module('mugenCalc.view', ['ngRoute'])
             }
           }
           question = question.substr(2)
+          break;
+        case 3:
+          numOfElements = 2
+          answer = 1
+          for(var j=0;j<numOfElements;j++){
+            nums[j] = Math.floor(Math.random() * (Math.pow(9,maxDigit)) + 1)
+            answer = answer * nums[j]
+          }
+          question = nums.join(' x ')
           break;
       }
       this.questionList[i] = {
