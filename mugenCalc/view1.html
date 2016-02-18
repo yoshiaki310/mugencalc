@@ -1,8 +1,5 @@
 
 
-<select ng-model="selectedMode" ng-options="mode as mode.label for mode in selectMode"  ng-change="change()"></select>
-<select ng-model="selectedDigit" ng-options="digit as digit.label for digit in selectDigit" ng-change="change()"></select>
-
 <table style="margin:1em;">
     <tr><th colspan="2">もんだい</th><th>こたえ</th><th>せいかい</th></tr>
     <tr ng-repeat="data in list">
@@ -16,4 +13,15 @@
 
 <button ng-click="showAnswer()">せいかいを 見る</button>
 
-<button ng-click="change()">もんだいを つくりなおす</button>
+<hr />
+
+<div>
+  <select ng-model="selectedMode" ng-options="mode as mode.label for mode in selectMode"  ng-change="change()"></select>
+  <select ng-model="selectedDigit" ng-options="digit as digit.label for digit in selectDigit" ng-change="change()"></select>
+</div>
+
+<div>
+  <button ng-click="change()">もんだいを つくりなおす</button>
+</div>
+
+<hr />
