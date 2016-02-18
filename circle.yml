@@ -14,5 +14,4 @@ deployment:
   production:
     branch: master
     commands:
-      - chmod +x ./deploy_production.sh
-      - ./deploy_production.sh
+      - git subtree push --prefix app origin gh-pages
