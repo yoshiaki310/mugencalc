@@ -1,0 +1,18 @@
+version: 2
+machine:
+  node:
+    version:  5.5.0
+
+dependencies:
+  override:
+    - npm install
+    - sudo pip install awscli
+
+  cache_directories:
+    - "node_modules"
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - git subtree push --prefix app origin gh-pages
