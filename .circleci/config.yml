@@ -1,18 +1,9 @@
 version: 2
-machine:
-  node:
-    version:  5.5.0
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.4.1
+    steps:
+      - checkout
+      - run: echo "A first hello"
 
-dependencies:
-  override:
-    - npm install
-    - sudo pip install awscli
-
-  cache_directories:
-    - "node_modules"
-
-deployment:
-  production:
-    branch: master
-    commands:
-      - git subtree push --prefix app origin gh-pages
